@@ -1,11 +1,14 @@
 {
     "name": "gip-federation",
     "version": "0.1.0-alpha",
+    "type": "module",
     "main": "src/main.ts",
     "scripts": {
         "dev": "ts-node src/main.ts",
         "build": "tsc",
-        "start": "node dist/main.js"
+        "start": "node dist/main.js",
+        "test": "jest",
+        "test:watch": "jest --watch"
     },
     "dependencies": {
         "ws": "^8.16.0",
@@ -14,6 +17,10 @@
     },
     "devDependencies": {
         "typescript": "^5.6.3",
-        "ts-node": "^10.9.2"
+        "ts-node": "^10.9.2",
+        "@types/jest": "^29.5.8",
+        "jest": "^29.7.0",
+        "ts-jest": "^29.1.1",
+        "@types/node": "^20.10.0"
     }
 }
