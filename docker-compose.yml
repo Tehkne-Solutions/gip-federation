@@ -1,0 +1,12 @@
+version: '3.9'
+services:
+  gip-federation:
+    build: .
+    container_name: gip-federation
+    ports:
+      - "8810:8810"
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - .:/app
+    restart: unless-stopped

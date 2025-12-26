@@ -1,0 +1,19 @@
+{
+    "name": "gip-federation",
+    "version": "0.1.0-alpha",
+    "main": "src/main.ts",
+    "scripts": {
+        "dev": "ts-node src/main.ts",
+        "build": "tsc",
+        "start": "node dist/main.js"
+    },
+    "dependencies": {
+        "ws": "^8.16.0",
+        "uuid": "^9.0.1",
+        "chalk": "^5.3.0"
+    },
+    "devDependencies": {
+        "typescript": "^5.6.3",
+        "ts-node": "^10.9.2"
+    }
+}
